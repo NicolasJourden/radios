@@ -1,0 +1,7 @@
+#!/bin/sh
+
+amixer --quiet sset 'PCM' 100%
+
+mplayer http://radiobonheur.ice.infomaniak.ch/radiobonheur-128-1.mp3 -af volume=-28 -endpos $1 -quiet &
+
+
