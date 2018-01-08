@@ -7,7 +7,6 @@ mplayer http://stream.ouifm.fr/ouifm-hd.mp3 -af volume=-30 -endpos $1 -quiet &
 i=60
 while [[ $i -le 100 ]]
 do 
-  echo $i
   amixer --quiet sset 'PCM' $i%
   usleep 250000
   let i=i+1
