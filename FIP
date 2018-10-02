@@ -2,7 +2,7 @@
 
 amixer --quiet sset 'PCM' 0%
 
-mplayer http://radiobonheur.ice.infomaniak.ch/radiobonheur-128-1.mp3 -af volume=-37.5 -endpos $1 -quiet | /radios/mplayer2LCDd.pl &
+mplayer http://direct.fipradio.fr/live/fip-midfi.mp3 -af volume=-30 -endpos $1 -quiet | /radios/mplayer2LCDd.pl &
 
 i=60
 while [[ $i -le 100 ]]
@@ -11,4 +11,5 @@ do
   usleep 250000
   let i=i+1
 done
+
 

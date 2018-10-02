@@ -2,7 +2,7 @@
 
 amixer --quiet sset 'PCM' 0%
 
-mplayer http://stream.ouifm.fr/ouifm-hd.mp3 -af volume=-30 -endpos $1 -quiet &
+mplayer http://stream.ouifm.fr/ouifm-hd.mp3 -af volume=-30 -endpos $1 -quiet | /radios/mplayer2LCDd.pl &
 
 i=60
 while [[ $i -le 100 ]]
